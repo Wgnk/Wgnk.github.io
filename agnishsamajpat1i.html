@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class ="header">
+        <a href="#" class ="logo">Portfolio Website</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="About.html">About</a>
+            <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://mail.google.com&service=mail&ec=GBRAFw">Contact(Via Email)</a>
+            <a href="Contact.html">Contact(Via Phone)</a>
+<br>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-image">
+            <img src="https://media.licdn.com/dms/image/D5603AQGFBkXMh3h9kw/profile-displayphoto-shrink_200_200/0/1687979456868?e=1702512000&v=beta&t=uSGjliQfhvDvIsnnxZd6ltfU0Bgf9asrBB9TJkFXDFI" alt="" >
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm Agnish Samajpati</h1>
+            <h3>Student at Narula Institute Of Technology</h3>
+            <p>I am a Diploma Electronics and Telecommunication Engineer. I am a highly motivated and results-oriented individual with a strong track record of success. I am proficient in a variety of programming languages and technologies, and I am always eager to learn new things. Later on I will pursue B.tech on same.</p>
+            <br>
+            <label><font color="White">Click to my linkdin to see my projects that I have made and my achivements that I have recieved.</font></label>
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/agnish-samajpati-198651273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="" class="btn">Download CV</a>
+            <br>
+            <br>
+            <br>
+            <label><font color="White">"An idea is salavation by imagination"</font></label>
+            <label><font color="White">-Frank Lloyd Wright</font></label>
+        </div>
+    </section>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #031540;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active{
+    color: #00abf0;
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(-90deg, #031540 65%, #fff 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #031540;
+    border-radius: 50%;
+    border: 25px solid #fff;
+    outline: 25px solid #031540;
+}
+
+.home-image img {
+    border-radius: 100%;
+    position: relative;
+    max-width: 380px;
+}
+
+.home-content {
+    max-width: 600px;
+    color: #fff;
+    text-align: right;
+}
+
+.home-content h1{
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(#00abf0, #00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+}
+
+@keyframes animateText {
+    0%, 95%, 100% {
+        background-position: -410px 0;
+    }
+    65%, 85% {
+        background-position: 0 0;
+    }
+}
+
+.home-content p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.home-sci{
+    margin: 25px 0 40px;
+}
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.home-sci a:hover {
+    background: #00abf0;
+    color: #fff;
+    border-color: #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+}
+
+.btn {
+    padding: 12px 35px;
+    background: #00abf0;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+    transition: .5s;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+</style>
+</html>
